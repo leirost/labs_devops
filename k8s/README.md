@@ -31,4 +31,14 @@
 
 ![](https://imageup.ru/img116/4205709/9laba4.png.html)
 
+## helm
+
+1) install helm. i used chocolatey. (screenshot 1)
+
+2) making magic using guide provided in lab description (screenshot 2)
+
+3) change repository and tag in `values.yaml`
+
+4) looks like I have a problem troubleshooting `readinessProbe` :(
+
  
