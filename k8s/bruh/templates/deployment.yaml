@@ -37,6 +37,17 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
+	  env:
+            - name: TIME_USER
+              valueFrom:
+                secretKeyRef:
+                  name: mossecret
+                  key: user
+            - name: TIME_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: mossecret
+                  key: pass
           livenessProbe:
             httpGet:
               path: /
